@@ -46,29 +46,39 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- 68.35.131.173
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by Jump-Box-Provisioner.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+  - Jump-Box-Provisioner
+  - 10.0.0.6
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                 |   68.35.131.173      |
+| ELK      | No                  |   10.0.0.6           |
+| Web-1    | No                  |   10.0.0.6           |
+| Web-2    | No                  |   10.0.0.6           |
+
+
 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- _TODO: What is the main advantage of automating configuration with Ansible?_ 
+  -One advantage is the use of playbooks (YAML). It is a great option for management and automation. You can automate complex IT application environments by using these            playbooks
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- SSH into Jump-Box-Provisioner
+- Start then Attach to the ansible docker
+- cd into /etc/ansibles/files and create the elk-playbook.yml
+- Run playbook by typing `ansible-playbook elk-playbook.yml` 
+- ssh into ELK-SERVER to make sure that everything is up and running
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
