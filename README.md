@@ -26,9 +26,11 @@ Load balancing ensures that the application will be highly functional, in additi
   - A load balancer helps prevent servers crashing due to too much traffic, they also increase uptime as well as optimize productivity. 
   - A Jump-Box is a secured computer that an admin connects to before launching an administrative task or use as an origination point to connect to other servers or untrusted       environments. These admin workstations can significantly reduce the chance of a malware infection. 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
 - _TODO: What does Filebeat watch for?_
+  - Filebeat monitors the log files as well as the locations that you specify, then it forwards them to Elasticsearch and Logstash for indexing.
 - _TODO: What does Metricbeat record?_
+  - Metricbeat records metric and statistic data and transports them to the output that you specify through Elasticsearch and Logstash.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -36,9 +38,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Web-1    | Server   | 10.0.0.9   | Linux            |
+| Web-2    | Server   | 10.0.0.10  | Linux            |
+| ELK      | Server   | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
