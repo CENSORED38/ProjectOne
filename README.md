@@ -7,6 +7,7 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Project One Elk Stack file may be used to install only certain pieces of it, such as Filebeat.
 
  ![filebeat-playbook.yml](https://github.com/CENSORED38/ProjectOne/blob/0b97e49f0edcd964230dd582eb67873d4bfdeaf7/filebeat-playbook.yml)
+ ![filebeat-config.yml](https://github.com/CENSORED38/ProjectOne/blob/main/filebeat-config.yml)
 
 This document contains the following details:
 - Description of the Topology
