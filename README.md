@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Project One Diagram](https://drive.google.com/file/d/1nD3fgVVCQWbholoRQE9AB1LP4XrFLxAT/view?usp=sharing)
+![Project One Diagram]()
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Project One Elk Stack file may be used to install only certain pieces of it, such as Filebeat.
 
