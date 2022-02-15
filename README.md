@@ -8,7 +8,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
  ![filebeat-playbook.yml](https://github.com/CENSORED38/ProjectOne/blob/0b97e49f0edcd964230dd582eb67873d4bfdeaf7/filebeat-playbook.yml)
  
- ![filebeat-config.yml](https://github.com/CENSORED38/ProjectOne/blob/main/filebeat-config.yml)
+ ![filebeat-config.yml](https://github.com/CENSORED38/ProjectOne/blob/ca724d882d1d0a70491ccb48d1a54ef6fc8333a9/Ansible/filebeat-config.yml)
 
 This document contains the following details:
 - Description of the Topology
