@@ -118,7 +118,7 @@ METRICBEAT
 - Update the metricbeat-config.yml file to include the ELK server's private IP in lines 62 and 96.
 - Run the playbook, and navigate to `http://<ELK-VM Public IP>/setup.php` to check that the installation worked as expected.
 
-_Answer the following questions to fill in the blanks:_
+
 - _Which file is the playbook? Where do you copy it?_ filebeat-playbook.yml. You copy it to /etc/ansible/files
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ /etc/ansible/hosts file where the IP of the Virtual Machines are. You have to sepcify two seperate groups in the /etc/ansible/hosts file. One group will be the webservers which have the IPs of the virtual machines that Filebeat will be installed to. The other group is names elkservers which will have the IP of the virtual machine that ELK will be installed to. 
 - _Which URL do you navigate to in order to check that the ELK server is running? http://<ELK-VM Public IP>/setup.php
